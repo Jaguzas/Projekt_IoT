@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+        android:id="@+id/button_wykresy"
+        android:layout_width="380dp"
+        android:layout_height="64dp"
+        android:textSize="20sp"
+        android:text="Wykresy" />
+
+    <Button
+        android:id="@+id/button_LED"
+        android:layout_width="380dp"
+        android:layout_height="64dp"
+        android:textSize="20sp"
+        android:text="Matryca LED" />
+
+    <Button
+        android:id="@+id/button_dane"
+        android:layout_width="380dp"
+        android:layout_height="64dp"
+        android:textSize="20sp"
+        android:text="Dane z czujników" />
+
+    <Button
+        android:id="@+id/configBtn"
+        android:layout_width="380dp"
+        android:layout_height="64dp"
+        android:textSize="20sp"
+        android:text="Konfiguracja" />
+</LinearLayout>
