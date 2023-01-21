@@ -1,0 +1,86 @@
+<!DOCTYPE html <html>
+
+<head>
+    <meta charset="utf-8">
+    <title>My test page</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="css/toastr.min.css">
+    <script src="js/toastr.min.js"></script>
+    <script src="js/jquery.flot.js"></script>
+    <script src="configuration.js"></script>
+    <style>
+        @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #fafafa;
+        }
+
+        .btn1 {
+            background-color: #7386D5;
+            border: none;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            transition-duration: 0.4s;
+
+        }
+
+        .btn1:hover {
+            background-color: #fafafa;
+            border: none;
+            color: #7386D5;
+            padding: 15px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            
+
+        }
+
+        .input_style {
+            padding:8px;display:block;border:none;border-bottom:1px solid #ccc;width:100%
+        }
+    </style>
+</head>
+
+<body onload="onLoadF()">
+    <div id="div_ip">
+        <label for="ip_addres">IP address: </label>
+        <span id="ipa"></span><br>
+        <input type="text" id="new_ip" class="input_style" name="new_ip"><br>
+        <button type="button" class="btn1" onclick="changeIP()">Change</button>
+
+    </div>
+    <div id="div_sample">
+        <label for="sample">Sample time [ms]: </label>
+        <span id="sampl"></span><br>
+        <input type="text" id="new_sample" class="input_style" name="new_sample"><br>
+        <button type="button" class="btn1" onclick="changeSampleTime()">Change</button>
+
+    </div>
+    <div id="div_path1">
+        <label for="path1">Server file: </label>
+        <span id="patt1"></span><br>
+        <input type="text" id="new_path1" class="input_style" name="new_path1"><br>
+        <button type="button" class="btn1" onclick="changePatch1()">Change</button>
+
+    </div>
+    <div id="div_path2">
+        <label for="path2">Server file: </label>
+        <span id="patt2"></span><br>
+        <input type="text" id="new_path2" class="input_style" name="new_path2"><br>
+        <button type="button" class="btn1" onclick="changePatch2()">Change</button>
+
+    </div>
+
+
+
+
+</body>
+
+</html>

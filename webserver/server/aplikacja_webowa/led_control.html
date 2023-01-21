@@ -1,0 +1,111 @@
+<!DOCTYPE html <!-- @author Dominik Łuczak -->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>My test page</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="configuration.js"></script>
+    <!-- <link rel="stylesheet" href="css/toastr.min.css"> -->
+    <script src="js/toastr.min.js"></script>
+    <!-- <script src="js/jquery.flot.js"></script> -->
+    <style>
+        @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #fafafa;
+        }
+
+
+        #error {
+            background-color: #A63348;
+            color: #fafafa;
+            padding: 15px 10px;
+        }
+
+        .btn1 {
+            background-color: #7386D5;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            transition-duration: 0.4s;
+
+        }
+
+        .btn2 {
+            background-color: #7386D5;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            transition-duration: 0.4s;
+
+        }
+
+        .btn1:hover {
+            background-color: #fafafa;
+            border: none;
+            color: #7386D5;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            
+
+        }
+
+        .btn2:hover {
+            background-color: #fafafa;
+            border: none;
+            color: #7386D5;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            
+
+        }
+        
+
+    </style>
+
+
+</head>
+
+<body onload="onLoadFcn()">
+    <div id="error"></div>
+    <div>
+        <label for="R">Intensity of color red (0-255):</label>
+        <input type="range" id="R" name="R" min="0" max="255" class="sliderR" onchange="updateTextInput();">
+        <br>
+
+        <label for="G">Intensity of color green (0-255):</label>
+        <input type="range" id="G" name="G" min="0" max="255" class="sliderG" onchange="updateTextInput();">
+        <br>
+
+        <label for="B">Intensity of color blue (0-255):</label>
+        <input type="range" id="B" name="B" min="0" max="255" class="sliderB" onchange="updateTextInput();">
+        <br>
+        <div id="wyswietl_rgb">
+
+        </div>
+        <div id="led-matrix"></div>
+        <button type="button" class="btn1" onclick="toggle()">Submit</button>
+        <button type="button" class="btn2" onclick="clear_matrix()">Clear</button>
+
+    </div>
+</body>
+
+</html>
+
+<!-- musimy w poscie wysłać json array o strukturze: LEDxy : [x,y,r,g,b] -->

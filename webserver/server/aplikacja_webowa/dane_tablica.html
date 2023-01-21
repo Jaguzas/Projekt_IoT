@@ -1,0 +1,46 @@
+<!DOCTYPE html <html>
+
+<head>
+	<meta charset="utf-8">
+	<title>My test page</title>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<link rel="stylesheet" href="css/toastr.min.css">
+	<script src="configuration.js"></script>
+	<script src="js/toastr.min.js"></script>
+	<script src="js/jquery.flot.js"></script>
+	<style>
+		@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+		body {
+			font-family: 'Poppins', sans-serif;
+			background: #fafafa;
+		}
+
+		#error {
+			background-color: #A63348;
+			color: #fafafa;
+			padding: 15px 10px;
+		}
+
+		#tablica_danych {
+			border: solid 1px #7386D5; 
+			padding: 5px;
+			width: 400px;
+			text-align: left;
+
+		}
+
+		.tb th, .tb td { border: solid 1px #777; padding: 5px; }
+	</style>
+</head>
+
+<body onload="setSample()">
+	<div id="error"></div>
+	<div id='x1'></div>
+	<table id="tablica_danych">
+	</table>
+
+
+</body>
+
+</html>
